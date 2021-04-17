@@ -48,11 +48,11 @@
                     @Html.DisplayFor(modelItem => item.apellidos)
                 </td>
                 <td>
-                    @Html.ActionLink("Editar", "Form", new { id = item.Id, operacion = Operacion.modificar },
+                    @Html.ActionLink("Editar", "Form", new { id = item, operacion = Operacion.modificar },
                                                        new { @class = "btn btn-xs btn-warning" }) |
-                    @Html.ActionLink("Detalles/Ver", "Form", new { id = item.Id, operacion = Operacion.ver },
+                    @Html.ActionLink("Detalles/Ver", "Form", new { id = item, operacion = Operacion.ver },
                                                        new { @class = "btn btn-xs btn-default" }) |
-                    @Html.ActionLink("Eliminar", "Delete", new { id = item.Id, operacion = Operacion.eliminar },
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item, operacion = Operacion.eliminar },
                                                        new { @class = "btn btn-xs btn-danger" })
                 </td>
             </tr>
